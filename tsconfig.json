@@ -23,6 +23,12 @@
       ],
       "angular-inline-svg/*": [
         "dist/angular-inline-svg/*"
+      ],
+      "inline-svg": [
+        "dist/inline-svg"
+      ],
+      "inline-svg/*": [
+        "dist/inline-svg/*"
       ]
     }
   }

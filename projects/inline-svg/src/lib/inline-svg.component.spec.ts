@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularInlineSvgComponent } from './angular-inline-svg.component';
+import { InlineSvgComponent } from './inline-svg.component';
 
-describe('AngularInlineSvgComponent', () => {
-  let component: AngularInlineSvgComponent;
-  let fixture: ComponentFixture<AngularInlineSvgComponent>;
+describe('InlineSvgComponent', () => {
+  let component: InlineSvgComponent;
+  let fixture: ComponentFixture<InlineSvgComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularInlineSvgComponent ]
+      declarations: [ InlineSvgComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularInlineSvgComponent);
+    fixture = TestBed.createComponent(InlineSvgComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

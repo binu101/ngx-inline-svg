@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-angular-inline-svg',
+  selector: 'lib-inline-svg',
   template: `
     <p>
-      angular-inline-svg works!
+      inline-svg works!
     </p>
   `,
   styles: []
 })
-export class AngularInlineSvgComponent implements OnInit {
+export class InlineSvgComponent implements OnInit {
 
   constructor() { }
 
