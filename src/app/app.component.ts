@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngx-inline-svg';
+
+    src = 'assets/binu.svg';
+
+    switch() {
+        switch (this.src) {
+            case 'assets/category_air.svg':
+                this.src = 'assets/feature_seo.svg';
+                break;
+            case 'assets/feature_seo.svg':
+                this.src = 'assets/category_air.svg';
+                break;
+        }
+    }
 }

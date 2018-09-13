@@ -122,41 +122,6 @@
         }
       }
     },
-    "angular-inline-svg": {
-      "root": "projects/angular-inline-svg",
-      "sourceRoot": "projects/angular-inline-svg/src",
-      "projectType": "library",
-      "prefix": "lib",
-      "targets": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/angular-inline-svg/tsconfig.lib.json",
-            "project": "projects/angular-inline-svg/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/angular-inline-svg/src/test.ts",
-            "tsConfig": "projects/angular-inline-svg/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-inline-svg/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-inline-svg/tsconfig.lib.json",
-              "projects/angular-inline-svg/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "inline-svg": {
       "root": "projects/inline-svg",
       "sourceRoot": "projects/inline-svg/src",
@@ -168,6 +133,9 @@
           "options": {
             "tsConfig": "projects/inline-svg/tsconfig.lib.json",
             "project": "projects/inline-svg/ng-package.json"
+          },
+          "configurations": {
+            "production": {}
           }
         },
         "test": {
